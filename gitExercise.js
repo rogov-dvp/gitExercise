@@ -5,8 +5,10 @@ feature2(arrInt);
 //functions:
 function feature2(arr) {
   let sum = 0;
-  for(num in arr) {
+  arr.forEach(num => {
     sum += num;
-  }
-  console.log(`The sum is ${sum}. The average is ${sum/arr.size}`)
+  }); 
+  console.log(`The sum is ${sum}`);
+  return sum;
 }
+module.exports = feature2;
