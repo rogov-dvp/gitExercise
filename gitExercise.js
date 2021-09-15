@@ -10,7 +10,6 @@ function feature1(arr) {
     concatString = concatString.concat(str+" ");
   });
   concatString = concatString.trim();
-  console.log('concatString',concatString);
   return concatString;
 }
 
