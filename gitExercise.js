@@ -4,9 +4,14 @@ feature1(arrStr);
 
 //functions:
 function feature1(arr) {
+  let concatString = ""; 
   arr.sort();
-  console.log("the following are printed in descending order");
-  for(str in arr) {
-    console.log(str);
-  }
+  arr.forEach(str => {
+    concatString = concatString.concat(str+" ");
+  });
+  concatString = concatString.trim();
+  console.log('concatString',concatString);
+  return concatString;
 }
+
+module.exports = feature1;
